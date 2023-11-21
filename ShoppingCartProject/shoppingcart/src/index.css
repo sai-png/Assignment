@@ -1,0 +1,118 @@
+/* src/ShoppingCart.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.animated-heading {
+  animation: bounceIn 1s;
+}
+
+@keyframes bounceIn {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.items-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.item-box {
+  width: calc(25% - 20px);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item-box:hover {
+  transform: scale(1.05);
+}
+
+.item-info {
+  margin-top: 15px;
+}
+
+.add-to-cart{
+  background-color: rgb(15, 194, 9);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+.remove-from-cart {
+  background-color: #ef3131;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.add-to-cart:hover,
+.remove-from-cart:hover {
+  background-color: rgb(34, 31, 212);
+  transform: scale(1.05);
+}
+
+.shopping-cart {
+  margin-top: 20px;
+}
+
+.shopping-cart h2 {
+  color: #ff0090;
+}
+
+.shopping-cart ul {
+  margin: 0;
+  padding: 0;
+}
+
+.shopping-cart li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}

@@ -1,0 +1,30 @@
+/* EmployeeForm.css */
+.employee-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 40px auto;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #3437db;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #3f34db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #293ab9;
+  }
+  
